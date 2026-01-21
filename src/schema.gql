@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  addToWaitlist(email: String!): WaitlistStatusDto!
+}
+
+type Query {
+  getWaitlistStatus(email: String!): WaitlistStatusDto!
+}
+
+type WaitlistStatusDto {
+  email: String!
+  isRegistered: Boolean!
+  registeredAt: String
+}
